@@ -1,13 +1,159 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-size: cover;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol,
+ul {
+  padding-left: 30px;
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  font-family: "Neucha", cursive;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.outliner {
+  border: 2px solid rgb(12, 12, 12);
+  height: 98px;
+}
+
+.neighbors {
+  height: 100px;
+}
+
+table {
+  border: 1px solid black;
+}
+
+.column {
+  display: inline-block;
+}
+
+.square {
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 40px;
+  margin: -2px;
+  text-align: center;
+  width: 40px;
+}
+
+.square-white {
+  background: white;
+}
+
+.square-grey {
+  background: rgb(224, 224, 224);
+}
+
+.square-red {
+  background: rgb(221, 50, 50);
+}
+
+input:disabled {
+  color: black;
+}
+
+td {
+  padding: 0px;
+}
+
+input {
+  padding: 0px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.prefilled {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.square:hover {
+  background: rgb(255, 251, 0);
+}
+
+tr {
+  padding-top: -1px;
+  padding-bottom: -1px;
+}
+
+input {
+  font-size: 16pt;
+  font-family: "lucida handwriting", "comic sans ms", sans-serif;
+  width: 100%;
+  display: block;
+  position: center;
+  height: 100%;
+  text-align: center;
+  border-style: hidden;
+  background: transparent;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
 }
