@@ -117,6 +117,8 @@ class Board extends Component {
       ],
       stepNumber: 0,
       filledSquares: this.filledSquares,
+      wrongAttempts: 0,
+      showModal: false,
     };
   }
 
@@ -174,6 +176,14 @@ class Board extends Component {
           !this.backTracking(backTrackTest))
       ) {
         squares[id].incorrect = true;
+        this.setState((prevState) => {
+          const wrongAttempts = prevState.wrongAttempts + 1;
+          if (wrongAttempts >= 3) {
+            alert("3 wrong attempts! Game over. Starting a new game...");
+            window.location.reload();
+          }
+          return { wrongAttempts };
+        });
       }
 
       if (squares[id].value === null) {
