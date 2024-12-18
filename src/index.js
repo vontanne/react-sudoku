@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Cell from "./cell.js";
-import "./index.css";
+import Cell from "./components/Cell/cell";
+import "./styles/index.css";
 
 class Neighbors extends Component {
   render() {
