@@ -1,23 +1,21 @@
-# Ծրագրի օգտագործման ուղեցույց
+# User Guide for the Application
 
-Ի՞նչ է նշանակում, երբ թիվը մուտքագրելուց հետո բացատը կարմիր է դառնում:
-Դա նշանակում է, որ մուտքագրումը սխալ է երկու պատճառով.
+## What does it mean when the space turns red after entering a number?  
+This indicates that the input is incorrect for two reasons:  
+1. The input matches another value in the same row or column.  
+2. The input makes the rest of the board unsolvable.  
 
-1․ Ներածումը համընկնում է նույն սյունակի կամ տողի հետ
-2․ Ներածումը անլուծելի է դարձնում տախտակի մնացած մասը
-
-## Ի՞նչպես գործարկել ծրագիրը
-
-Տերմինալով տեղափոխվել ծրագրի հիմնական թղթապանակի մեջ (root folder), ապա կատարել հետևյալ հրահանգը.
+## How to Run the Application  
+Navigate to the main project directory (root folder) in the terminal, then execute the following command:  
 
 ```bash
 npm i
 ```
 
-Dependency-ների ներբեռնումն ավարտելուց հետո կատարել հաջորդ հրահանգը․
+After completing the installation of dependencies, execute the next command:  
 
 ```bash
 npm run start
-```
+```  
 
-Խաղը կբացվի բրաուզերի պատուհանում `localhost:3000` հասցեյով։
+The game will open in a browser window at the address `localhost:3000`.  
